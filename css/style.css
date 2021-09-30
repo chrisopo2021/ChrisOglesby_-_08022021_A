@@ -17,6 +17,7 @@ logo {
     flex-direction: row;
     justify-content: flex-end;
     padding-bottom: 30px;    
+    color: black;
 }
 
 .container div:nth-child(1) {
@@ -52,6 +53,7 @@ logo {
     font-size: 15px;
     padding-bottom: 15px;
     font-weight: bolder;
+
 }
 
 .container2 div:nth-child(2) {
@@ -64,7 +66,10 @@ logo {
     display: flex;
     color: black;
     border: 1px solid white;
-    padding-bottom: 15px;
+    padding-bottom: 0px;
+    font-weight: bolder;
+    font-size: 15px;
+    margin-left: 30px
 }
 
 .container3 div:nth-child(1) {
@@ -109,8 +114,10 @@ input {
     display: flex;
     color: black;
     border: 1px solid white;
-    padding-bottom: 25px;
+    padding-bottom: 20px;
     text-align: center;
+    padding-top: 20px;
+    margin-left: 30px
 }
 
 .container4 div:nth-child(1) {
@@ -118,6 +125,7 @@ input {
     border: 0px solid #f2f2f2;
     padding-right: 20px;
     padding-top: 8px;
+    color: black;
 }
 
 .container4 div:nth-child(2) {
@@ -206,14 +214,22 @@ input {
 
 filters {
     font-weight: bolder;
+    color: black;
 }
+
+p {
+    font-weight: bolder;
+    color: black;
+}
+
 
 .container5 {
     display: flex;
     color: black;
     border: 1px solid white;
     text-align: center;
-}
+    margin-left: 30px;
+    }
 
 .container5 div:nth-child(1) {
     background-color: white;
@@ -228,64 +244,98 @@ filters {
 .container5 div:nth-child(2) {
     padding-top: 12px;
     padding-left: 10px;
+    padding-bottom: 25px;
+    color: black;
 }
 
-.heading {
+.container5-1 {
+    display: flex;
+    color: black;
     background-color: #F2F2F2;
+    border: 0px solid white;
+    text-align: center;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
     padding: 25px;
-    font-weight: bolder;
+   
 }
+
+.container5-1 div:nth-child(1) {
+    color: black;
+    font-weight: bolder;
+    font-size: 15px;
+ }
 
 .container6 {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    align-content: space-between;
     flex-wrap: wrap; 
     color: black;
     border: 0px solid white;
     text-align: bottom;
     background-color: #F2F2F2;
-    padding: 25px;
+    padding: 10px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    padding-bottom: 25px;
+    max-width: 625px;
+    min-width: 280px;
+    
 }
 
 .container6 div:nth-child(1) {
     border: 5px solid white;
     border-radius: 10%;
+    background-color: white;
  }
 
 .container6 div:nth-child(2) {
     border: 5px solid white;
     border-radius: 10%;
+    background-color: white;
 }
 
 .container6 div:nth-child(3) {
     border: 5px solid white;
     border-radius: 10%;
+    background-color: white;
 }
 
 .container6 div:nth-child(4) {
     border: 5px solid white;
     border-radius: 10%;
+    background-color: white;
 }
 
 .container6 div:nth-child(5) {
     border: 5px solid white;
     border-radius: 10%;
+    background-color: white;
 }
 
 .container6 div:nth-child(6) {
     border: 5px solid white;
     border-radius: 10%;
+    background-color: white;
 }
 
-img {
+
+
+.img1 {
     border: 0px solid #f2f2f2;
     border-top-left-radius: 10%;
     border-top-right-radius: 10%;
     border-bottom: 5px solid white;
 
+}
+
+.img2 {
+    border-bottom-left-radius: 10%;
+    border-top-left-radius: 10%;
+    float: left;
+    padding-right: 5px;
 }
 
 .caption {
@@ -295,6 +345,20 @@ img {
     padding-bottom: 3px;
     padding-left: 5px;
     background-color: white;
+    font-weight: bolder;
+}
+
+.caption2 {
+    display: block;
+    color: black;
+    font-size: 12px;
+    padding-bottom: 3px;
+    padding-left: 5px;
+    background-color: white;
+    font-weight: bolder;
+    text-align:left;
+    
+    
 }
 
 .caption-price {
@@ -304,6 +368,16 @@ img {
     padding-bottom: 5px;
     padding-left: 5px;
     background-color: white;
+    font-weight: initial;
+}
+
+.caption-price2 {
+    display: inline-block;
+    color: black;
+    font-size: 10px;
+    padding-bottom: 5px;
+    background-color: white;
+    font-weight: initial;
 }
 
 .caption-stars {
@@ -314,11 +388,79 @@ img {
     background-color: white;
 }
 
+.caption-stars2 {
+    display: inline-block;
+    font-size: 10px;
+    padding-bottom: 3px;
+    background-color: white;
+}
+
+.fa-chart-line {
+    color: black;
+}
+
 .show {
     background-color: #F2F2F2;
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
     padding: 25px;
     font-size: 12px;
-
 }
+.container7 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: space-around;
+    flex-wrap: nowrap; 
+    color: black;
+    border: 0px solid white;
+    text-align: bottom;
+    background-color: #F2F2F2;
+    padding: 10px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+    padding-bottom: 25px;
+    margin-left: 30px;
+    min-width: 280px;   
+    }
+
+    .container7 div:nth-child(1) {
+        display: flex;
+        color: black;
+        font-weight: bolder;
+        font-size: 15px;
+        padding: 10px;
+        justify-content: space-between;
+     }
+
+     .container7 div:nth-child(2) {
+        border: 5px solid white;
+        border-radius: 10%;
+        background-color: white; 
+        padding: none;
+     
+     }
+
+     .container7 div:nth-child(3) {
+        border: 5px solid white;
+        border-radius: 10%;
+        background-color: white;  
+     }
+
+     .container7 div:nth-child(4) {
+        border: 5px solid white;
+        border-radius: 10%;
+        background-color: white;  
+     }
+
+
+    .container8 {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    
+
+ 
