@@ -15,60 +15,78 @@
         <link href="css/style.css" type="text/css" rel="stylesheet">
         <link href="favicon.ico" type="image/x-icon" rel="shortcut icon" >
     </head>
-    <logo><img src="\images\logo\Reservia@3x.png"  width="90" height="45"></logo>
-    <body>
+    
+    <span class="logo"><img src="/images/logo/Reservia@3x.png" alt="Reservia logo" title="Reservia.com" 
+      width="90" height="45"></span>
+    
 
-        <header class="container"> 
+    <header>
+        <div class="container"> 
         <div>Accommodations</div>
         <div>Activities</div>
         <div><b>Sign Up</b></div> 
-        </header>
+        </div>
+    </header>
 
-      <nav>
-        <taglines class="container2">
-        <div>Find a place for your dream vacation</div>
+    <nav>
+        <div class="taglines">
+        <h1>Find a place for your dream vacation</h1>
         <div>Downtown or in nature</div>
+        </div>
         
         
-        <search-field class="container3">
-        <div i class="fas fa-map-marker-alt" i > </div> 
+        <div class="search-field">
+        <div class="fas fa-map-marker-alt"></div> 
         <div><input type="search" id="site-search" name="q"
-          aria-label="Search through site content" placeholder="Marseille, France"> </div>
+          aria-label="Search through site content" placeholder="Marseille, France"></div>
       <div><a href="http://www.google.com" >Search</a></div>
-        </search-field>
+    </div>
+    </nav>
 
-        <filters class="container4">
-          <div>Filters</div>
-          <div><i class="fas fa-money-bill-wave"></i></div>
-          <div>Low Cost</div>
-          <div><i class="fas fa-child"></i></div>
-          <div>Family-friendly</div>
-          <div><i class="fas fa-heart"></i></div>
-          <div>Romantic</div>
-          <div><i class="fas fa-dog"></i></div>
-          <div>Pets allowed</div>
-        </filters>
-      </nav>
+    <section>
+      <div class="filters">
+        <h2>Filters</h2>
+        <div class="filter">
+          <div class="filter-icon"><i class="fas fa-money-bill-wave"></i></div>
+          <div class="filter-text">Low Cost</div>
+      </div>
+      <div class="filter">
+        <div class="filter-icon"><i class="fas fa-child"></i></div>
+        <div class="filter-text">Family-friendly</div>
+      </div>
+      <div class="filter">
+        <div class="filter-icon"><i class="fas fa-heart"></i></div>
+        <div class="filter-text">Romantic</div>
+      </div>
+      <div class="filter">
+        <div class="filter-icon"><i class="fas fa-dog"></i></div>
+        <div class="filter-text">Pets allowed</div>
+      </div>
+      </div>
+      </section>
+    
         
-      <section>
-        <info class="container5">
+      
+        <div class="info">
           <div><i class="fas fa-info"></i></div>
           <div>More than 500 accommodations available in this city</div>
-        </info>
-      </section>
+        </div>
+      
 
-      <article class="container8">
+      <div class="container8">
 
       <section>
-        <heading class="container5-1">
-          <div>Accommodations in Marseille</div>
-        </heading>
+        <div class="accommodationsinmarseille">
+          <h3>Accommodations in Marseille</h3>
+        </div>
 
-        <accommodations-tiles class="container6">
+        <div class="accommodations-tiles">
 
-          <div><img src="images\hebergements\4_small\marcus-loke-WQJvWU_HZFo-unsplash.jpg" height="100px" width="150px"
-            class="img1">
-            <span class="caption">Auberge la Cannabièrre</span> 
+          <div><img src="images/hebergements/1_xlarge/marcus-loke-WQJvWU_HZFo-unsplash.jpg" 
+            alt="Auberge la Cannabierre hotel with black bunk beds near window overlooking city" 
+            title="Auberge la Cannabierre" height="85" width="170" class="img1">
+
+            <span class="caption">Auberge la Cannabierre</span> 
             <span class="caption-price">Nights Starting at 25€</span>
             <span class="caption-stars">
               <i class="fas fa-star"></i>
@@ -76,11 +94,13 @@
               <i class="fas fa-star"></i>
               <i class="fas fa-star"></i>
               <i class="far fa-star"></i>
-            </i></span>
+            </span>
           </div>
 
-          <div><img src="images\hebergements\4_small\fred-kleber-gTbaxaVLvsg-unsplash.jpg" height="100px" width="150px"
-            class="img1">
+          <div><img src="images/hebergements/1_xlarge/fred-kleber-gTbaxaVLvsg-unsplash.jpg" 
+            alt="Hotel du port, two twin beds in light blue room"
+            title="Hotel du port" height="85" width="170" class="img1">
+
             <span class="caption">Hotel du port</span> 
             <span class="caption-price">Nights Starting at 52€</span>
             <span class="caption-stars">
@@ -89,11 +109,13 @@
               <i class="fas fa-star"></i>
               <i class="fas fa-star"></i>
               <i class="fas fa-star"></i>
-            </i></span> 
+            </span> 
             </div>
 
-            <div><img src="images\hebergements\4_small\reisetopia-B8WIgxA_PFU-unsplash.jpg" height="100px" width="150px"
-              class="img1">
+            <div><img src="images/hebergements/1_xlarge/reisetopia-B8WIgxA_PFU-unsplash.jpg" 
+              alt="Les mouettes hotel, white bed near spacious closet with mirror" 
+              title="Les mouettes hotel" height="85" width="170" class="img1">
+
               <span class="caption">Les mouettes Hotel</span> 
               <span class="caption-price">Nights Starting at 76€</span>
               <span class="caption-stars">
@@ -102,11 +124,13 @@
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
                 <i class="far fa-star"></i>
-              </i></span> 
+              </span> 
               </div>
   
-              <div><img src="images\hebergements\1_xlarge\annie-spratt-Eg1qcIitAuA-unsplash.jpg" height="100px" width="150px"
-                class="img1">
+              <div><img src="images/hebergements/1_xlarge/annie-spratt-Eg1qcIitAuA-unsplash.jpg" 
+                alt="Hotel de la mer, ocean themed room with large white bed" 
+                title="Hotel de la mer" height="85" width="170" class="img1">
+
                 <span class="caption">Hotel de la mer</span> 
                 <span class="caption-price">Nights Starting at 46€</span>
                 <span class="caption-stars">
@@ -115,11 +139,13 @@
                   <i class="fas fa-star"></i>
                   <i class="far fa-star"></i>
                   <i class="far fa-star"></i>
-                </i></span>
+                </span>
               </div>
     
-              <div><img src="images\hebergements\4_small\nicate-lee-kT-ZyaiwBe0-unsplash.jpg" height="100px" width="150px"
-                class="img1">
+              <div><img src="images/hebergements/1_xlarge/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" 
+                alt="Auberge Le Panier, two wooden bunk beds in all wood room" 
+                title="Auberge Le Panier" height="85" width="170" class="img1">
+
                 <span class="caption">Auberge Le Panier</span> 
                 <span class="caption-price">Nights Starting at 23€</span>
                 <span class="caption-stars">
@@ -128,30 +154,35 @@
                   <i class="fas fa-star"></i>
                   <i class="fas fa-star"></i>
                   <i class="far fa-star"></i>
-                </i></span> 
+                </span> 
                 </div>
     
-                <div><img src="images\hebergements\1_xlarge\febrian-zakaria-M6S1WvfW68A-unsplash.jpg" height="100px" width="150px" 
-                  class="img1">
-                  <span class="caption">Les mouettes Hotel</span> 
-                  <span class="caption-price">Nights Starting at 76€</span>
+                <div><img src="images/hebergements/1_xlarge/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" 
+                  alt="Hotel chez Amina, two beds with desk near window" 
+                  title="Hotel chez Amina" height="85" width="170" class="img1">
+
+                  <span class="caption">Hotel chez Amina</span> 
+                  <span class="caption-price">Nights Starting at 96€</span>
                   <span class="caption-stars">
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                     <i class="far fa-star"></i>
-                  </i></span> 
+                  </span> 
                   </div>
-        </accommodations-tiles>
+        </div>
       </section>
 
-      <aside class="container7">
-        <div>Most Popular<span class="fas fa-chart-line"></i></span>
+      <aside>
+      <div class="mostpopulartiles">
+        <div>Most Popular<span class="fas fa-chart-line"></span>
         </div>
 
-        <div><img src="images\hebergements\1_xlarge\emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" height="100px" width="150px"
-          class="img2">
+        <div><img src="images/hebergements/1_xlarge/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" 
+          alt="Morning Star Hotel, olive green room with large mirror over bed" 
+          title="Morning Star Hotel" height="100" width="150" class="img2">
+
           <span class="caption2">Morning Star Hotel</span> 
           <span class="caption-price2">Nights Starting at 128€</span>
           <span class="caption-stars2">
@@ -160,11 +191,13 @@
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
             <i class="far fa-star"></i>
-          </i></span> 
+          </span> 
           </div>
 
-          <div><img src="images\hebergements\1_xlarge\aw-creative-VGs8z60yT2c-unsplash.jpg" height="100px" width="150px"
-            class="img2">
+          <div><img src="images/hebergements/1_xlarge/aw-creative-VGs8z60yT2c-unsplash.jpg" 
+            alt="Au coeur de l'eau Bed And Breakfast, modern room with large tan bed" 
+            title="Au coeur de l'eau Bed And Breakfast" height="100" width="150" class="img2">
+
             <span class="caption2">Au coeur de l'eau Bed and Breakfast</span> 
             <span class="caption-price2">Nights Starting at 71€</span>
             <span class="caption-stars2">
@@ -173,11 +206,13 @@
               <i class="fas fa-star"></i>
               <i class="fas fa-star"></i>
               <i class="far fa-star"></i>
-            </i></span> 
+            </span> 
             </div>
 
-            <div><img src="images\hebergements\1_xlarge\febrian-zakaria-sjvU0THccQA-unsplash.jpg" height="100px" width="150px"
-              class="img2">
+            <div><img src="images/hebergements/1_xlarge/febrian-zakaria-sjvU0THccQA-unsplash.jpg" 
+              alt="Tout bleu et Blanc Hotel, large white bed with extra large backboard" 
+              title="Tout bleu et Blanc Hotel" height="100" width="150" class="img2">
+
               <span class="caption2">Tout bleu et Blanc Hotel</span> 
               <span class="caption-price2">Nights Starting at 68€</span>
               <span class="caption-stars2">
@@ -186,18 +221,101 @@
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
                 <i class="far fa-star"></i>
-              </i></span> 
-              </div>       
+              </span> 
+              </div>
+      </div>       
         
+        </aside>
+
+    </div>
+        <section>
+
+          <div class="activitiesinmarseille">
+            <h3>Activities in Marseille</h3>
+          </div>
+
+          <div class="activities-tiles-row">
+          
+          <div><img src="images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" 
+            alt="Old Port, several sailboats docked in a port" 
+            title="Old Port" height="300" width="225" class="img3">
+            <span class="caption3">Old Port</span>
+          </div>
         
-        
-      </aside>
 
-    </article>
+          <div class="activities-tiles-column">
+
+          <div><img src="images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg" 
+            alt="Pomegues Fort, fort atop large rocky hillside" 
+            title="Pomegues Fort" height="150" width="225" class="img3">
+            <span class="caption3">Pomegues Fort</span>
+          </div>
 
 
-          </footer>
+          <div><img src="images/activites/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" 
+            alt="Frioul, telescope overlooking bridge and harbor" 
+            title="Frioul" height="100" width="225" class="img3">
+            <span class="caption3">Frioul</span>
+          </div>
+          </div>
+
+          <div class="activities-tiles-row">
+          
+          <div><img src="images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" 
+              alt="Calanques National Park, rocky cliffs overlooking ocean" 
+              title="Calanques National Park" height="300" width="225" class="img3">
+              <span class="caption3">Calanques National Park</span>
+            </div>
+          </div>
+
+          <div class="activities-tiles-column">
+
+            <div><img src="images/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg" 
+              alt="Notre-Dame-de-la-Garde, town in foreground with large church on hill in the background" 
+              title="Notre-Dame-de-la-Garde" height="150" width="225" class="img3">
+              <span class="caption3">Notre-Dame-de-la-Garde</span>
+            </div>
+
+            <div><img src="images/activites/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg" 
+              alt="Longchamp Park, large cathedral building with statue surrounded by water" 
+              title="Longchamp Park" height="100" width="225" class="img3">
+              <span class="caption3">Longchamp Park</span>
+            </div>
+          </div>
+          </div>
+      </section>
+      <footer>
+  
+        <div class="container9">
+  
+        <div class="about"> 
+          <h4>About</h4>
+          <p>Site Map</p>
+          <p>General Terms and Conditions</p>
+          <p>Data and Privacy</p>  
+        </div>
+  
+        <div class="ouraccommodations"> 
+          <h4>Our Accommodations</h4>
+          <p>Quality Assessment</p>
+          <p>Do you have a hotel?</p>
+        </div>
+  
+        <div class="assistance"> 
+          <h4>Assistance</h4>
+          <p>Help Desk</p>
+          <p>Contact Us</p>
+        </div>
+  
+          
+  
+  
+        </div>
+  
+      </footer>
     </body>
+
+
 </html>
 
 
