@@ -5,10 +5,35 @@
 }
 
 .logo {
-    width: 100px;
-    position: absolute;
-    top: 20px;
-    left: 35px;
+display: flex;
+position: absolute;
+justify-content: center;
+top: 20px;
+left: 40px;
+
+}
+
+@media all and (max-width: 768px) {
+    .logo {
+        display: block;
+        justify-content: center;
+        position: relative;
+        margin-left: 400px;
+    }
+}
+
+.top-nav-accommodations:hover {
+    border-top: 2px solid #0065FC;
+
+}
+
+.top-nav-activities:hover {
+    border-top: 2px solid #0065FC;
+
+}
+
+.filter:hover {
+    background-color: #f2f2f2;
 }
 
 .container {
@@ -18,7 +43,10 @@
     justify-content: flex-end;
     padding-bottom: 0px;    
     color: black;
+    padding-top: 10px;
+    
 }
+
 
 .container div:nth-child(1) {
     background-color: white;
@@ -76,6 +104,14 @@ h4 {
     font-size: 15px;
     padding-bottom: 15px;
 }
+b {
+    color: white;
+    font-size: 16px;
+}
+
+.activities {
+    color: black;
+}
 
 .search-field {
     display: flex;
@@ -110,14 +146,21 @@ h4 {
     padding: 25px;
     border-top-right-radius: 25px;
     border-bottom-right-radius: 25px;
+    color: white;
 }
 
 a {
+    text-decoration: none;
+    font-size: medium;
+}
+
+
+.searchlink {
     color: white;
     background-color: #0065FC;
     font-weight: bolder;
     font-size: 17px;
-    font-stretch: wider;
+   
 }
 
 
@@ -166,6 +209,17 @@ input {
     width: 80%;
     align-items: center;
     justify-content: flex-start;
+}
+
+@media all and (max-width: 768px) {
+    .filters {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+        margin-left: 15px;
+
+    }
 }
 
 .filters div:nth-child(1) {
@@ -219,8 +273,10 @@ p {
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
     padding-left: 25px;
+    padding-top: 25px;
    
 }
+
 
 .accommodationsinmarseille div:nth-child(1) {
     color: black;
@@ -236,15 +292,19 @@ p {
     flex-wrap: wrap; 
     color: black;
     border: 0px solid white;
-    text-align: bottom;
     background-color: #F2F2F2;
-    padding: 10px;
-    border-bottom-left-radius: 25px;
-    border-bottom-right-radius: 25px;
     max-width: 700px;
-    min-width: 280px;
+    min-width: 280px;    
     
+}
+
+@media all and (max-width: 768px) {
+    .accommodations-tiles {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
     
+  }
 }
 
 .accommodations-tiles div:nth-child(1) {
@@ -253,48 +313,7 @@ p {
     background-color: white;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     margin-bottom: 25px;
- }
-
-.accommodations-tiles div:nth-child(2) {
-    border: 5px solid white;
-    border-radius: 10%;
-    background-color: white;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    margin-bottom: 25px;
 }
-
-.accommodations-tiles div:nth-child(3) {
-    border: 5px solid white;
-    border-radius: 10%;
-    background-color: white;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    margin-bottom: 25px;
-}
-
-.accommodations-tiles div:nth-child(4) {
-    border: 5px solid white;
-    border-radius: 10%;
-    background-color: white;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    margin-bottom: 25px;
-}
-
-.accommodations-tiles div:nth-child(5) {
-    border: 5px solid white;
-    border-radius: 10%;
-    background-color: white;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    margin-bottom: 25px;
-}
-
-.accommodations-tiles div:nth-child(6) {
-    border: 5px solid white;
-    border-radius: 10%;
-    background-color: white;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    margin-bottom: 25px;
-}
-
 
 
 .img1 {
@@ -302,6 +321,8 @@ p {
     border-top-left-radius: 10%;
     border-top-right-radius: 10%;
     border-bottom: 5px solid white;
+    object-fit: cover;
+
 
 }
 
@@ -310,6 +331,7 @@ p {
     border-top-left-radius: 10%;
     float: left;
     padding-right: 5px;
+    object-fit: cover;
 }
 
 .caption {
@@ -346,7 +368,7 @@ p {
 }
 
 .caption-price2 {
-    display: inline-block;
+    display: block;
     color: black;
     font-size: 10px;
     padding-bottom: 5px;
@@ -363,10 +385,12 @@ p {
 }
 
 .caption-stars2 {
-    display: inline-block;
+    display: block;
     font-size: 10px;
     padding-bottom: 3px;
     background-color: white;
+    padding-left: 155px;
+
 }
 
 .fa-chart-line {
@@ -388,14 +412,22 @@ p {
     flex-wrap: nowrap; 
     color: black;
     border: 0px solid white;
-    text-align: bottom;
     background-color: #F2F2F2;
     padding: 10px;
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
     border-top-right-radius: 25px;
     border-top-left-radius: 25px;
-    min-width: 300px;   
+    padding: 25px;
+    }
+
+    @media all and (max-width: 768px) {
+        .mostpopulartiles {
+            display: flex;
+            flex-direction: column;
+            justify-content:space-between;
+            margin-top: 25px;
+        }
     }
 
     .mostpopulartiles div:nth-child(1) {
@@ -405,15 +437,16 @@ p {
         font-size: 15px;
         padding: 10px;
         justify-content: space-between;
+       
      }
 
      .mostpopulartiles div:nth-child(2) {
         border: 5px solid white;
         border-radius: 10%;
         background-color: white; 
-        padding: none;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         margin-bottom: 25px;
+        
      
      }
 
@@ -430,15 +463,39 @@ p {
         border-radius: 10%;
         background-color: white;  
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-        margin-bottom: 25px;
+        
      }
 
 
     .container8 {
         display: flex;
         justify-content: space-evenly;
+        align-content: space-between;
+        align-content: center;
+        flex-wrap: nowrap;
+        min-width: 992px;
     }
 
+    @media all and (max-width: 768px) {
+        .container8 {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+    }
+
+.showmore {
+    color: black;
+    background-color: #F2F2F2;
+    padding-bottom: 58px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    font-weight: bold;
+    padding-left: 25px;
+    padding-top: 20px;
+    }
+            
     
 .section {
     display: flex;
@@ -448,6 +505,7 @@ p {
 .img3 {
     border-top-left-radius: 10%;
     border-top-right-radius: 10%;
+    object-fit: cover;
 }
 
 .caption3 {
@@ -468,21 +526,46 @@ p {
 .activitiesinmarseille {
     display: flex;
     justify-content: left;
-    text-align: center;
-    padding-left: 100px;
+    
+    margin-left: 100px;
+ 
 }
+
+@media all and (max-width: 768px) {
+    .activitiesinmarseille {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin-left: 0px;
+        align-content: center;
+    }
+}
+
 
 .activities-tiles-row {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-content: space-between;
-    flex-wrap: wrap; 
+    flex-wrap: nowrap; 
     color: black;
     border: 0px solid white;
-    
+        
 
 }
+
+@media all and (max-width: 768px) {
+    .activities-tiles-row {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+    }
+}
+
+
+
+
 
 .activities-tiles-row div:nth-child(1) {
     border: 0px solid white;
@@ -572,9 +655,62 @@ p {
     padding-right: 300px;
     
 }
- 
 
- 
+@media all and (max-width: 768px) {
+    .container9 {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+        padding: 0px;
+    }
+}
+
+.container10 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    min-width: 992px;
+}
+
+@media all and (max-width: 768px) {
+    .container10 {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+}
+
+.container11 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    min-width: 992px;
+}
+
+@media all and (max-width: 768px) {
+    .container11 {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+}
+
+  
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media only screen and (min-width: 768px) { 
+  } 
+  
+  /* Large devices (laptops/desktops, 992px and up) */
+  @media only screen and (min-width: 992px) {
+
+  } 
+  
+
 
 
 
