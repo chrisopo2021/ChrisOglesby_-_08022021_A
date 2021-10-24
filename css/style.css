@@ -78,7 +78,7 @@ h2 {
 h3 {
         color: black;
         font-weight: 900;
-        font-size: medium;
+        font-size: large;
 }
 
 h4 {
@@ -104,6 +104,7 @@ h4 {
     font-size: 15px;
     padding-bottom: 15px;
 }
+
 b {
     color: white;
     font-size: 16px;
@@ -128,9 +129,10 @@ b {
     border: 0px solid #f2f2f2;
     padding: 5px;
     padding-left: 25px;
-    padding-top: 25px;
+    padding-top: 28px;
     border-top-left-radius: 25px;
     border-bottom-left-radius: 25px;
+    color: black;
 }
 
 .search-field div:nth-child(2) {
@@ -154,7 +156,6 @@ a {
     font-size: medium;
 }
 
-
 .searchlink {
     color: white;
     background-color: #0065FC;
@@ -163,13 +164,10 @@ a {
    
 }
 
-
-
 input {
     height: 40px;
     width: 175px;
   }
-
 
 .filter {
     display: flex;
@@ -187,7 +185,7 @@ input {
     background-color: #DEEBFF;
     border: 1px solid #DEEBFF;
     flex-basis: 9%;
-    padding: 5px;
+    padding: 8px;
     border-radius: 30px;
 }
 
@@ -293,8 +291,9 @@ p {
     color: black;
     border: 0px solid white;
     background-color: #F2F2F2;
-    max-width: 700px;
-    min-width: 280px;    
+    max-width: 780px;
+    min-width: 280px; 
+    padding: 15px;   
     
 }
 
@@ -419,6 +418,8 @@ p {
     border-top-right-radius: 25px;
     border-top-left-radius: 25px;
     padding: 25px;
+    max-width: 500px;
+    max-height: 800px;
     }
 
     @media all and (max-width: 768px) {
@@ -430,13 +431,16 @@ p {
         }
     }
 
+
     .mostpopulartiles div:nth-child(1) {
         display: flex;
         color: black;
         font-weight: bolder;
         font-size: 15px;
-        padding: 10px;
+        padding: 0px;
+        padding-bottom: 10px;
         justify-content: space-between;
+        align-items: center;
        
      }
 
@@ -488,12 +492,12 @@ p {
 .showmore {
     color: black;
     background-color: #F2F2F2;
-    padding-bottom: 58px;
+    padding-bottom: 50px;
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
     font-weight: bold;
     padding-left: 25px;
-    padding-top: 20px;
+
     }
             
     
