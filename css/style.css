@@ -429,7 +429,7 @@ nav {
      }  
 
 .mostpopulartiles  div:nth-child(2), .mostpopulartiles div:nth-child(3),
-.mostpopulartiles div:nth-child(4), .mostpopulartiles div:nth-child(5) {
+.mostpopulartiles div:nth-child(4) {
     display: flex;
     flex-direction: column;
     border: 5px solid white;
@@ -523,8 +523,6 @@ nav {
    
  }
 
-
-
 .about {
     background-color: #F2F2F2;
     padding-top: 10px;
@@ -577,7 +575,6 @@ nav {
         justify-content: flex-start;
         margin: 5px;
     }
-
 
     .logo {
         margin-top: 10px;
